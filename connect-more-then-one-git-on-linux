@@ -1,0 +1,19 @@
+saleem-raza@saleem-raza-Lenovo-V310-15IKB:~/.ssh$ ls
+authorized_keys  github_personal.pub        known_hosts
+config           github_strugbitsdrive      known_hosts.old
+github_personal  github_strugbitsdrive.pub
+saleem-raza@saleem-raza-Lenovo-V310-15IKB:~/.ssh$ cat config 
+# Personal GitHub Account
+Host github.com-personal
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github_personal
+    IdentitiesOnly yes
+
+# Work GitHub Account
+Host github.com-work
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github_strugbitsdrive
+    IdentitiesOnly yes
+saleem-raza@saleem-raza-Lenovo-V310-15IKB:~/.ssh$ 
